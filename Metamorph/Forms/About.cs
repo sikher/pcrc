@@ -146,7 +146,7 @@ namespace Metamorph.Forms
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(328, 16);
             this.labelCopyright.TabIndex = 0;
-            this.labelCopyright.Text = "Copyright © 2004-2006 Sukhjinder Sidhu.  All rights reserved.";
+            this.labelCopyright.Text = "Copyright © 2004-2007 Sukhjinder Sidhu.  All rights reserved.";
             // 
             // picLogo
             // 

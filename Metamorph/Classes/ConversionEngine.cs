@@ -1,7 +1,7 @@
 ﻿//
 // Metamorph
 //
-// Copyright © 2004-2006 Sukhjinder Sidhu
+// Copyright © 2004-2007 Sukhjinder Sidhu
 // Released under the GNU General Public Licence (see accompanying licence.txt)
 //
 // This program is free software; you can redistribute it and/or modify
@@ -55,7 +55,7 @@ namespace Metamorph.Classes
 	/// You may freely use this class in your program provided the 
 	/// GNU GPL licensing terms are complied with.
 	///
-	/// Copyright © 2004-2006 Sukhjinder Sidhu.
+	/// Copyright © 2004-2007 Sukhjinder Sidhu.
 	/// Released under the GNU General Public Licence.
 	///
 	/// For further information on XML comment tags, visit MSDN:

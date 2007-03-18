@@ -49,5 +49,5 @@ currently in the Unicode standard but are expected to enter Unicode 5.1.
 Multiple vowel signs may not render correctly on your computer system.
 
 ------------------------------------------------------------------------------
-Copyright © 2004-2006 Sukhjinder Sidhu.
+Copyright © 2004-2007 Sukhjinder Sidhu.
 ------------------------------------------------------------------------------
