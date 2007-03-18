@@ -1,0 +1,39 @@
+-----------------------------------------------------------------------------
+Bugs and Feature List
+-----------------------------------------------------------------------------
+
+Priorities 1 - 4.  1 being most urgent, 4 being least urgent.
+
+PRIORITY 1
+
+Progress bar for conversion and cancellation.
+When converting using normal Gurmukhi to Latin, last letter has A on it.
+
+PRIORITY 2
+
+DCW Mapping does not have Ek Onkar
+Using File >> Open, All FIles is the filter, by default.
+Auto Font changes
+
+TOOLTIPS
+
+PRIORITY 3
+
+Does not remember which input/output was selected after opening the options dialog
+When the main window is maxamized, and then the input/output textboxes are resized, then restore the window and see what happens
+
+PRIORITY 4
+
+Undo does not work when C button is used
+Undo should be disabled when their is nothing to undo
+Undo only reverts to the last item. can it undo a lot, like the undo in word
+
+Character Viewer: on focus or on click should delete "Enter Normal Text Here"
+Character Viewer: same with Enter HTML Entities Here
+Character Viewer: if an invalid eneity is entered, it should give an error
+
+Bhupinder:
+
+that small window which shows ikonkaar by default
+just on its left and right side put arrows <prev   next>
+

@@ -1,0 +1,28 @@
+What is to be done:
+
+* Search through all TODOs.
+* Allow auto font change for conversion methods by reading from conversion file.
+* Allow cancellation of conversion process
+* Automatic HTML file conversion?
+
+TODO:
+
+Options have been implemented in GUI and XML file, however they don't take affect yet
+Insert appropriate code when converting
+
+In the next version, have regular expressions based conversion of text
+Also have option to include classes of characters
+http://www.knowdotnet.com/articles/regereplacementstrings.html  <!-- Important -->
+http://www.regexlib.com/CheatSheet.aspx
+
+*** EASY EXPANSION BY HAVING type="regex" in <mapping>
+
+Allow users to have classes resolved in their regex.
+
+
+Mappings without IEF are a bit messy - Add a SimpleMapping property to MappingDetails
+Need to sort out internal mappings because it's got messy
+
+--description in From.AnmolLipi.mmf file
+
+Tool that sorts Gurmukhi text?
