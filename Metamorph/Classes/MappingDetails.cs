@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 
-
 namespace Metamorph.Classes
 {
 	public class MappingDetails
