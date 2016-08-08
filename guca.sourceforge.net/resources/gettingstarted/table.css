@@ -1,0 +1,28 @@
+.unicodetable
+{
+	border: 1px #000000 solid;
+	border-collapse: collapse;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+.unicodetable td
+{
+	border: 1px #000000 solid;
+	width: 60px;
+}
+
+tr.tabgurmukhi
+{
+	font-family: Saab, Raavi, Arial Unicode MS, Saraswati5;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+tr.tablatin
+{
+	font-family: Tahoma, Arial, Helvetica;
+	font-size: 12px;
+	text-align: center;
+}

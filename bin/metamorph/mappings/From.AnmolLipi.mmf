@@ -1,0 +1,562 @@
+﻿<metamorph-mapping version="1.0">
+<!--
+
+Copyright © 2005 Sukhjinder Sidhu.
+
+This mapping file is distributed with Metamoprh. It is 
+licensed for use in accordance with the GNU General
+Public Licence.
+
+Visit the Punjabi Computing Resource Centre for further
+details:
+
+	http://guca.sourceforge.net/
+
+-->
+
+	<information>
+		<from>AnmolLipi</from>
+		<to>__gurmukhi__</to>
+		<version>1.0</version>
+		<author>Sukhjinder Sidhu</author>
+		<description>Converts AnmolLipi to Unicode.</description>
+		<inputfont>AnmolLipi</inputfont>
+		<outputfont>Unicode</outputfont>
+	</information>
+
+	<mapping>
+		<!-- ਫ਼ -->
+		<convert from="0026" to="F12A F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੴ -->
+		<convert from="003C" to="F10B"/>
+	</mapping>
+
+	<mapping>
+		<!-- Extended Onkar (null) -->
+		<convert from="003E" to=""/>
+	</mapping>
+
+
+	<mapping>
+		<!-- Udaat -->
+		<convert from="0040" to="F162"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਅ -->
+		<convert from="0041" to="F111"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਭ -->
+		<convert from="0042" to="F12C"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਛ -->
+		<convert from="0043" to="F11B"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਧ -->
+		<convert from="0044" to="F127"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਓ -->
+		<convert from="0045" to="F110 F177"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਢ -->
+		<convert from="0046" to="F122"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਘ -->
+		<convert from="0047" to="F118"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Haha -->
+		<convert from="0048" to="F134"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੀ -->
+		<convert from="0049" to="F172"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਝ -->
+		<convert from="004A" to="F11D"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਖ -->
+		<convert from="004B" to="F116"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਲ਼ -->
+		<convert from="004C" to="F130 F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੰ -->
+		<convert from="004D" to="F17C"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਂ -->
+		<convert from="004E" to="F17B"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੌ -->
+		<convert from="004F" to="F178"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਫ -->
+		<convert from="0050" to="F12A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਥ -->
+		<convert from="0051" to="F125"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Rara -->
+		<convert from="0052" to="F14F"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਸ਼ -->
+		<convert from="0053" to="F113 F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਠ -->
+		<convert from="0054" to="F120"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੂ -->
+		<convert from="0055" to="F174"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੜ -->
+		<convert from="0056" to="F132"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਾਂ -->
+		<convert from="0057" to="F170 F17B"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਯ -->
+		<convert from="0058" to="F12E"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੈ -->
+		<convert from="0059" to="F176"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਗ਼ -->
+		<convert from="005A" to="F117 F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- । -->
+		<convert from="005B" to="F10D"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਞ -->
+		<convert from="005C" to="F11E"/>
+	</mapping>
+
+	<mapping>
+		<!-- ॥ -->
+		<convert from="005D" to="F10E"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਖ਼ -->
+		<convert from="005E" to="F116 F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੱ -->
+		<convert from="0060" to="F17D"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੳ -->
+		<convert from="0061" to="F110"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਬ -->
+		<convert from="0062" to="F12B"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਚ -->
+		<convert from="0063" to="F11A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਦ -->
+		<convert from="0064" to="F126"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੲ -->
+		<convert from="0065" to="F112"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਡ -->
+		<convert from="0066" to="F121"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਗ -->
+		<convert from="0067" to="F117"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਹ -->
+		<convert from="0068" to="F114"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਿ -->
+		<convert from="0069" to="F171"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਜ -->
+		<convert from="006A" to="F11C"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਕ -->
+		<convert from="006B" to="F115"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਲ -->
+		<convert from="006C" to="F130"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਮ -->
+		<convert from="006D" to="F12D"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਨ -->
+		<convert from="006E" to="F128"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੋ -->
+		<convert from="006F " to="F177"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਪ -->
+		<convert from="0070" to="F129"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਤ -->
+		<convert from="0071" to="F124"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਰ -->
+		<convert from="0072" to="F12F"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਸ -->
+		<convert from="0073" to="F113"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਟ -->
+		<convert from="0074" to="F11F"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੁ -->
+		<convert from="0075" to="F173"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਵ -->
+		<convert from="0076" to="F131"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਾ -->
+		<convert from="0077" to="F170"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਣ -->
+		<convert from="0078" to="F123"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੇ -->
+		<convert from="0079" to="F175"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਜ਼ -->
+		<convert from="007A" to="F11C F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਙ -->
+		<convert from="007C" to="F119"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੱ -->
+		<convert from="007E" to="F17D"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੴ -->
+		<convert from="00A1" to="F10B"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੱ -->
+		<convert from="00A4" to="F17D"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Haha + ੂ-->
+		<convert from="00A7" to="F134 F174"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੂ -->
+		<convert from="00A8" to="F174"/>
+	</mapping>
+
+	<mapping>
+		<!-- Space -->
+		<convert from="00AA" to="0020"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Rara -->
+		<convert from="00AE" to="F14F"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Yaiyya (Yakash)-->
+		<convert from="00B4" to="F160"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੰ -->
+		<convert from="00B5" to="F17C"/>
+	</mapping>
+	
+	<mapping>
+		<!-- ੴ -->
+		<convert from="00C5" to="F10B"/>
+	</mapping>
+
+	<mapping>
+		<!-- Extended Onkar (null) -->
+		<convert from="00C6" to=""/>
+	</mapping>
+
+	<mapping>
+		<!-- ☬ -->
+		<convert from="00C7" to="F10C"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Vava -->
+		<convert from="00CD" to="F151"/>
+	</mapping>
+
+	<mapping>
+		<!-- Half Yaiyya -->
+		<convert from="00CE" to="F14E"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Yaiyya -->
+		<convert from="00CF" to="F161"/>
+	</mapping>
+
+	<mapping>
+		<!-- ॥ -->
+		<convert from="00D2" to="F10E"/>
+	</mapping>
+
+	<mapping>
+		<!-- ❀ -->
+		<convert from="00D3" to="2740"/>
+	</mapping>
+
+	<mapping>
+		<!-- ❁ -->
+		<convert from="00D4" to="2741"/>
+	</mapping>
+
+	<mapping>
+		<!-- Extender Character (null) -->
+		<convert from="00D8" to=""/>
+	</mapping>
+
+	<mapping>
+		<!-- ਃ (Visarg) -->
+		<convert from="00DA" to="F17E"/>
+	</mapping>
+
+	<mapping>
+		<!-- Extended Onkar (null) -->
+		<convert from="00E5" to=""/>
+	</mapping>
+
+	<mapping>
+		<!-- ਼ -->
+		<convert from="00E6" to="F17A"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Chucha -->
+		<convert from="00E7" to="F13A"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੧ -->
+		<convert from="00F1" to="F101"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੨ -->
+		<convert from="00F2" to="F102"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੩ -->
+		<convert from="00F3" to="F103"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੪ -->
+		<convert from="00F4" to="F104"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੫ -->
+		<convert from="00F5" to="F105"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੬ -->
+		<convert from="00F6" to="F106"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੭ -->
+		<convert from="00F7" to="F107"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੮ -->
+		<convert from="00F8" to="F108"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੯ -->
+		<convert from="00F9" to="F109"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੦ -->
+		<convert from="00FA" to="F100"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੁ -->
+		<convert from="00FC" to="F173"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਕ ਥਿੰਦ -->
+		<convert from="00FF" to="F115 0020 F171 F125 F17C F126"/>
+	</mapping>
+
+	<mapping>
+		<!-- ❁ -->
+		<convert from="0152" to="2741"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Tutta -->
+		<convert from="0153" to="F144"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਨੂੰ -->
+		<convert from="0192" to="F128 F174 F17C"/>
+	</mapping>
+
+	<mapping>
+		<!-- ਂ -->
+		<convert from="02C6" to="F17B"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Nunna -->
+		<convert from="02DC" to="F148"/>
+	</mapping>
+
+	<mapping>
+		<!-- ੰ -->
+		<convert from="03BC" to="F17C"/>
+	</mapping>
+
+	<mapping>
+		<!-- ✽ -->
+		<convert from="201A" to="273D"/>
+	</mapping>
+
+	<mapping>
+		<!-- Paireen Tainka -->
+		<convert from="2020" to="F13F"/>
+	</mapping>
+
+	<mapping>
+		<!-- ❁ -->
+		<convert from="2030" to="2741"/>
+	</mapping>
+
+	<mapping>
+		<!-- ÷ -->
+		<convert from="2039" to="F1F7"/>
+	</mapping>
+</metamorph-mapping>

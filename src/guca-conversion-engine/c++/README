@@ -1,0 +1,41 @@
+This is a C++ port of the C# Gurmukhi Unicode Conversion Engine class
+that is available at http://guca.sourceforge.net/.  
+
+This port is merely designed for third parties to use natively without
+the .NET framework within their own applications.  It is released
+under the GNU General Public Licence.
+
+When implementing the C++ class, you should note the following 
+differences:
+
+	* Due to lack of support for properties in C++, all the properties
+	  are now methods with the prefix "set_" and "get_".
+	  
+	  For example:
+	  
+		if (Unicode4 == true)
+			....;
+		
+	  becomes:
+	  
+		if (get_Unicode4() == true)
+			....;
+		
+	  And:
+	  
+		Unicode4 = false;
+	  
+	  becomes:
+	  
+		set_Unicode4(false);
+
+	* Unlike C# char types, C++ char types are usually 8 bit ASCII and do
+	  not natively use Unicode (unless UTF-8 is implemented).  Therefore
+	  the C++ port uses wchar_t data types and std::wstring.
+	  
+	  Make sure you either use TCHAR and define _UNICODE or stick to
+	  wchar_t.
+	  
+	* The class is platform independent and does not use any system APIs.
+	  However, it has been developed on Windows and therefore you should
+	  report any portablity issues to sukhuk@users.sourceforge.net.

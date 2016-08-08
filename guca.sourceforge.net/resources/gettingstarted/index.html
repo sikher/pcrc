@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title>PCRC - General Resources - Getting Started with Unicode</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="table.css" rel="stylesheet" type="text/css" />	
+	<link href="../../style.main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--//--><![CDATA[//><!-- 
+function changeAllLinksWithClassToTargetBlanks() {
+  for (i = 0; i < document.links.length; i++) {
+    if (document.links[i].getAttribute('class') == 'newwindow'
+      || document.links[i].className == 'newwindow') {
+      document.links[i].setAttribute('target', '_blank');
+    }
+  }
+}
+window.onload = changeAllLinksWithClassToTargetBlanks;
+//--><!]]></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!-- 
+function switchlang(){
+	var tempURL
+	var newURL
+	var currURL=(window.location.href)
+	var startURL='http://guca.sourceforge.net/pa/'
+
+	tempURL=(currURL.substring(28,currURL.length))
+	newURL=startURL + tempURL
+
+	window.location.href=newURL
+}
+//--><!]]></script>
+
+</head>
+
+<body>
+
+<!-- logo --><!-- Keep on one line to resolve spacing issues with IE -->
+<div id="logo"><img src="../../logo.jpg" alt="Punjabi Computing Resource Centre"/></div>
+
+<!-- navigation (top) -->
+<div id="navigation">
+	&nbsp;﻿<a href="../../index.html">Home</a> | <a href="../../faq/index.html">FAQ</a> | <a href="../index.html">General Resources</a> | <a href="../../typography/index.html">Typography</a> | <a href="../../applications/index.html">Applications</a> | <a href="../../compatibility/index.html">Compatibility Guide</a>  | <a href="../../forum/index.html">Forum</a> | <a href="mailto:sukhuk@users.sourceforge.net">Contact</a> | <a href="javascript:switchlang()" xml:lang="pa-IN" hreflang="pa-IN">ਪੰਜਾਬੀ</a>
+</div>
+
+<!-- location -->
+<div id="location">
+	&nbsp;You are here: <a href="../../index.html">Home</a> > <a href="../index.html">General Resources</a> > <a href="index.html">Getting Started with Unicode</a>
+</div>
+
+<!-- main section -->
+<table id="main">
+	<tr>
+		<!-- links (left) -->
+		<td id="links">
+			<h1>Quick Links</h1>
+			<p><a href="../../applications/guca/index.html">Gurmukhi Conversion</a></p>
+<p><a href="../../typography/fonts/saab/index.html">Saab Font</a></p>
+			<h1>Article Links</h1>
+			<p>None</p>
+			<br/>
+<br/>
+<p>
+<a href="http://sourceforge.net/donate/index.php?group_id=103525"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" class="noborder" alt="Support This Project" /></a>	<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=103525&amp;type=1" width="88" height="31" class="noborder" alt="SourceForge.net Logo" /></a>
+</p>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29445160-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+		</td>
+		
+		<td id="page">
+			﻿<h1>Getting Started with Unicode</h1>
+
+<p><a href="getting.started.with.unicode.pdf">A PDF version of this document is also available.</a></p>
+
+<p>This guide will introduce the concepts behind Unicode and how it can be used for writing Punjabi in Gurmukhi.  It is designed for people who are familiar with Gurmukhi and have used Gurmukhi on a computer before.</p>
+
+<h2>Getting started</h2>
+
+<p>To get started you need to check that your computer supports Unicode and install the appropriate software to handle Gurmukhi.  This is a simple process if your operating system has this ability.</p>
+
+<p>Windows XP and newer versions of Windows will fully support Unicode Gurmukhi.  Older versions of Windows (95, 98, ME) do not support Unicode Gurmukhi.  If you have an older version of Windows, you can download Internet Explorer 6.0 which will allow you to view Unicode Gurmukhi web pages.  You will not be able to type in Unicode Gurmukhi on older versions of Windows.</p>
+
+<p>Details on <a href="../punjabisupport/index.html">how to enable Unicode Gurmukhi</a> on your computer depending on your operating system are available.</p>
+
+<p>After you have enabled Gurmukhi support on your computer, you should install some Unicode Gurmukhi fonts if you have not got any already.  A <a href="../../typography/fonts/index.html">selection of free fonts</a> is available.  We recommend you install both Saab and AnmolUni.</p>
+
+<p>Finally, you should get to grips with your keyboard layout.  If you are unhappy, you can <a href="../../typography/keyboardlayouts/index.html">download a different one</a> or you can get the <a href="http://www.microsoft.com/globaldev/tools/msklc.mspx">Microsoft Keyboard Layout Creator</a> to make your own.  The same keyboard layout can be used for all Unicode Gurmukhi fonts.  If you change the layout, this will not affect the fonts you are using.</p>
+
+<h2>Unicode</h2>
+
+<p>Unicode is designed as a character set that allows virtually all written scripts in the world to be used on a computer.  It is a monumental step forward and allows non-English languages to be used universally on computer systems.</p>
+
+<p>“Unicode provides a unique number for every character, no matter what the platform, no matter what the program, no matter what the language.”</p>
+
+<h2>How Unicode differs from fonts</h2>
+
+<p>Historically, Gurmukhi has been represented using vast numbers of proprietary fonts – each with their own encoding method and keyboard layout.  They worked by changing the appearance of Latin text characters so that they formed Gurmukhi.  For example, with AnmolLipi the Latin capital letter ‘A’ represents Era.</p>
+
+<p><img src="a.era.png" alt="AnmolLipi Era" width="58" height="18"/></p>
+
+<p>Using a different font would corrupt the Gurmukhi text and make it unreadable.  For example, DrChatrikWeb shows the same letter as Ura.</p>
+
+<p><img src="a.ura.png" alt="DrChatrikWeb Ura" width="58" height="18"/></p>
+
+<p>Unicode does away with this ambiguity.  Instead, it represents Gurmukhi with its own characters and does not use Latin text.  This is standardised on all computers so no matter what font you use, the text will be the same!</p>
+
+<p>Unicode also separates encoding from input.  This means that you can have any type of keyboard layout that you want and the underlying text will always be the same.</p>
+
+<h2>What you should know</h2>
+
+<p>There are peculiarities involved with using Unicode Gurmukhi that one should be aware of.</p>
+
+<p>The concept of independent vowels is unusual in Gurmukhi.  Unlike other Indian scripts, Gurmukhi constructs independent vowels by using a combination of dependent vowel signs with Ura, Era and Iri.  In keeping with other Indian scripts such as Devanagari, Unicode encodes these independent vowels separately.  Thus when you wish to type Iri and Bihari you must use the pre-composed Iri Bihari character.</p>
+
+<p>Conjuncts such as Paireen Haha and Paireen Rara are created using a Devanagari like Halant.  Thus, if you wish to type ‘ਪ੍ਰ’ you would enter Puppa (ਪ), Halant (੍) and finally Rara(ਰ).</p>
+
+<p>The above two issues can be addressed using different keyboard layouts.  For example, you could have a keyboard layout that converted the individual key combinations of Iri and Bihari to the pre-composed Iri Bihari character.  You could also have a key that contained both a Halant and a Rara/Haha so that when it is pressed it would automatically show the Paireen form.  Some keyboards may contain these features and you are free to use whichever you find more comfortable.</p>
+
+<p>Characters in Unicode are entered in logical order – that is the order that they are pronounced and not how they are written.  Therefore if you wish to type a syllable with Sihari in it, you must type the Sihari after the character it applies to.  The computer will then reposition this to the left.  For example, to type ‘ਵਿਚ’ you would enter Vava (ਵ), Sihari (ਿ) and then Chucha (ਚ).</p>
+
+<p>Unicode strongly enforces the basic rules of Gurmukhi.  You are therefore not able to enter character combinations that are invalid in modern Gurmukhi.  For example, you cannot attach more than one vowel sign to a consonant.  If you attempt to do this, a dotted circle will appear next to the second vowel that prevents it joining onto the consonant.</p>
+
+
+
+
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-4562988960684008";
+            /* Footer Advert */
+            google_ad_slot = "6498534292";
+            google_ad_width = 468;
+            google_ad_height = 60;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+		</td>
+        <td id="advert">
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-4562988960684008";
+            /* Right-side advert */
+            google_ad_slot = "2423423508";
+            google_ad_width = 160;
+            google_ad_height = 600;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </td>
+	</tr>
+</table>
+<!-- copyright -->
+<div id="copyright">
+	<p>Copyright &copy; 2004-2005 <a href="mailto:sukhuk@users.sourceforge.net">Sukhjinder Sidhu</a>. All rights reserved.</p>
+</div>
+</body>
+</html>

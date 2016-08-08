@@ -1,0 +1,381 @@
+body {
+	width: 720px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+}
+
+div#logo {
+	width: 720px;
+	height: 90px;
+	padding: 0;
+}
+
+div#navigation {
+	width: 720px;
+	height: 20px;
+	background: #FF0000;
+	text-align: left;
+	font-size: 12px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	color: #FFFFFF;
+	padding-top: 3px;
+}
+
+table#main {
+	width: 880px;
+	border-width: 0;
+	border-collapse: collapse;
+	padding: 0;
+}
+
+table#main #advert {
+    vertical-align: top; 
+}
+
+div#copyright p {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 90%; 
+	color: #000000; 
+	margin-left: 5px;
+}
+
+div#location {
+	width: 720px;
+	height: 20px;
+	background: #CCCCCC;
+	text-align: left;
+	font-size: 12px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	color: #000000;
+	padding-top: 2px;
+}
+
+/*******************
+
+LINKS
+
+*******************/
+
+td#links {
+	width: 120px;
+	text-align: left;
+	vertical-align: top;
+	background: #6A9BD7;
+	padding-left: 5px;
+}
+
+td#links a {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 110%;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+td#links p {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 110%;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+td#links h1 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 150%;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+td#links a:link { 
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+td#links a:visited { 
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+td#links a:active { 
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+td#links a:hover { 
+    color: #000000;
+    text-decoration: none; 
+}
+
+/*******************
+
+PAGE
+
+*******************/
+
+td#page {
+	background: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+}
+
+td#page p {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 130%;
+	line-height: 150%;
+	margin-left: 15px;
+	text-align: justify;
+}
+
+td#page p.nojustify {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 130%;
+	line-height: 150%;
+	margin-left: 15px;
+	text-align: left;
+}
+
+td#page ol{
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 130%;
+	line-height: 150%;
+	text-align: left;
+}
+
+td#page ul{
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 130%;
+	line-height: 150%;
+	text-align: left;
+}
+
+td#page ol ul{
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 100%;
+	line-height: 150%;
+	text-align: left;
+}
+
+td#page ul ul{
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 100%;
+	line-height: 150%;
+	text-align: left;
+}
+
+td#page pre {
+	font-size: 130%;
+	line-height: 150%;
+	margin-left: 15px;
+	text-align: justify;
+}
+
+td#page h1 {  
+	display: block;
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 240%;
+	color:  red; 
+	margin-left: 5px
+}
+
+td#page h2 {  
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 160%;
+	color:  red;
+	margin-left: 5px
+}
+
+td#page h3 {  
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 120%;
+	color:  red;
+	margin-left: 15px
+}
+
+td#page a:link { 
+    color: #B43232;
+    text-decoration: none;
+}
+
+td#page a:visited { 
+    color: #666666;
+    text-decoration: none;
+}
+
+td#page a:active { 
+    color: #666666;
+    text-decoration: none;
+}
+
+td#page a:hover { 
+    color: #000000;
+    text-decoration: underline; 
+}
+
+/*******************
+
+INSERT
+
+*******************/
+/*
+div#insert {
+	width: 180px;
+	float: right;
+	text-align: right;
+	border: 2px solid red;
+}
+
+div#insert h1 {
+	display: block;
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	background: #FF0000;
+	font-size: 120%;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+div#insert a {
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: right;
+}
+
+div#insert a:link { 
+    color: #000000;
+    text-decoration: none;
+}
+
+div#insert a:visited { 
+    color: #666666;
+    text-decoration: none;
+}
+
+div#insert a:active { 
+    color: #666666;
+    text-decoration: none;
+}
+
+div#insert a:hover { 
+    color: #FF0000;
+    text-decoration: underline; 
+}
+*/
+/*******************
+
+NAVIGATION
+
+*******************/
+
+div#navigation a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div#navigation a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div#navigation a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div#navigation a:hover { 
+    color: #FFFFFF;
+    text-decoration: underline; 
+}
+
+/*******************
+
+LOCATION
+
+*******************/
+
+div#location a:link { 
+    color: #000000;
+    text-decoration: none;
+}
+
+div#location a:visited { 
+    color: #000000;
+    text-decoration: none;
+}
+
+div#location a:active { 
+    color: #000000;
+    text-decoration: none;
+}
+
+div#location a:hover { 
+    color: #000000;
+    text-decoration: underline; 
+}
+
+.noborder {
+	border: 0;
+}
+
+/*******************
+
+COMPATIBILITY TABLE
+
+*******************/
+
+.compatibility 
+{
+	border: 1px #000000 solid;
+	border-collapse: collapse;
+	padding: 3px;
+	margin-left: 15px;
+	width: 575px;
+}
+
+.compatibility td
+{
+	border: 1px #000000 solid;
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	font-size: 130%;
+	line-height: 150%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.compatibility th
+{
+	background-color: #FF0000;
+	text-align: left;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif, Saab, Raavi, Saraswati5; 
+	color: #FFFFFF;
+	padding-top: 3px;
+	border: 1px #000000 solid;
+}
+
+.compatibility th#notes
+{
+	width: 200px;
+	text-align: justify;
+}
+
+.compatibility th#platform
+{
+	width: 100px;
+}
+
+.compatibility th#version
+{
+	width: 50px;
+}
+
+.compatibility th#compatibility
+{
+	width: 70px;
+}

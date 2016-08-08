@@ -1,0 +1,641 @@
+﻿<metamorph-mapping version="1.0">
+	<information>
+		<from>__interindic__</from>
+		<to>Latin</to>
+		<version>1.0</version>
+		<author>The Sikher Project, Sukhjinder Sidhu</author>
+		<description>Converts InterIndic to Latin.</description>
+		<inputfont></inputfont>
+		<outputfont>Unicode</outputfont>
+	</information>
+
+	<mapping>
+		<!-- Sign CANDRABINDU / ADDAK BINDI -->
+		<convert from="E001" to="006D 0310" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign ANUSVARA / BINDI -->
+		<convert from="E002" to="1E41" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign VISARGA / VISARG -->
+		<convert from="E003" to="1E25" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign SHORT A -->
+		<!-- PROBLEM -->
+		<convert from="E004" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter A -->
+		<convert from="E005" to="0061"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter AA -->
+		<convert from="E006" to="0101" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter I -->
+		<convert from="E007" to="0069" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter II -->
+		<convert from="E008" to="012B" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter U -->
+		<convert from="E009" to="0075" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter UU -->
+		<convert from="E00A" to="016B" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter VOCALIC R -->
+		<convert from="E00B" to="0072 0325" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter VOCALIC L -->
+		<convert from="E00C" to="006C 0325" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter CANDRA E -->
+		<convert from="E00D" to="0115" />
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped Letter SHORT E -->
+		<convert from="E00E" to="0065" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter E -->
+		<convert from="E00F" to="0113" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter AI -->
+		<convert from="E010" to="0061 0069" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter CANDRA O -->
+		<convert from="E011" to="014F" />
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped Letter SHORT O -->
+		<convert from="E012" to="006F" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter O -->
+		<convert from="E013" to="014D" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter AU -->
+		<convert from="E014" to="0061 0075" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter KA -->
+		<convert from="E015" to="006B"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter KHA -->
+		<convert from="E016" to="006B 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter GA -->
+		<convert from="E017" to="0067"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter GHA -->
+		<convert from="E018" to="0067 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter NGA -->
+		<convert from="E019" to="1E45"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter CA -->
+		<convert from="E01A" to="0063"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter CHA -->
+		<convert from="E01B" to="0063 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter JA -->
+		<convert from="E01C" to="006A"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter JHA -->
+		<convert from="E01D" to="006A 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter NYA -->
+		<convert from="E01E" to="00F1"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter TTA -->
+		<convert from="E01F" to="1E6D"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter TTHA -->
+		<convert from="E020" to="1E6D 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter DDA -->
+		<convert from="E021" to="1E0D"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter DDHA -->
+		<convert from="E022" to="1E0D 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter NNA -->
+		<convert from="E023" to="1E47"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter TA -->
+		<convert from="E024" to="0074"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter THA -->
+		<convert from="E025" to="0074 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter DA -->
+		<convert from="E026" to="0064"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter DHA -->
+		<convert from="E027" to="0064 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter NA -->
+		<convert from="E028" to="006E"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E029" to="1E49"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter PA -->
+		<convert from="E02A" to="0070"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter PHA -->
+		<convert from="E02B" to="0070 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter BA -->
+		<convert from="E02C" to="0062"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter BHA -->
+		<convert from="E02D" to="0062 0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter MA -->
+		<convert from="E02E" to="006D"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter YA -->
+		<convert from="E02F" to="0079"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter RA -->
+		<convert from="E030" to="0072"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E031" to="1E5F"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter LA -->
+		<convert from="E032" to="006C"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter LLA -->
+		<convert from="E033" to="1E37"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<!-- PROBLEM -->
+		<convert from="E034" to="1E3B"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter VA -->
+		<convert from="E035" to="0076"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter SHA -->
+		<convert from="E036" to="015B"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter SSA -->
+		<convert from="E037" to="1E63"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter SA -->
+		<convert from="E038" to="0073"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter HA -->
+		<convert from="E039" to="0068"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- Sign NUKTA -->
+		<!-- PROBLEM -->
+		<convert from="E03C" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign AVAGRAHA -->
+		<!-- PROBLEM -->
+		<convert from="E03D" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign VIRAMA -->
+		<!-- PROBLEM -->
+		<convert from="E04D" to="" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- OM -->
+		<convert from="E050" to="0027 006F 006D" />
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped Stress Sign UDATTA -->
+		<!-- PROBLEM -->
+		<convert from="E051" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped Stress Sign ANUDATTA -->
+		<!-- PROBLEM -->
+		<convert from="E052" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped GRAVE ACCENT -->
+		<!-- PROBLEM -->
+		<convert from="E053" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped ACUTE ACCENT -->
+		<!-- PROBLEM -->
+		<convert from="E054" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E058" to="0071"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E059" to="1E35 1E96"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E05A" to="0121"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E05B" to="007A"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter RRA -->
+		<convert from="E05C" to="1E5B"/>
+		<transliterate inherentvowel="0061" vowelaction="add"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E05D" to="1E5B 0068"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E05E" to="0066"/>
+	</mapping>
+
+	<mapping>
+		<!-- NONE -->
+		<convert from="E05F" to="1E8F"/>>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign AA  -->
+		<convert from="E03E" to="0101" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign I -->
+		<convert from="E03F" to="0069" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign II -->
+		<convert from="E040" to="012B" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign U -->
+		<convert from="E041" to="0075" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign UU -->
+		<convert from="E042" to="016B" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign VOCALIC R -->
+		<convert from="E043" to="0072 0325" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign VOCALIC RR -->
+		<convert from="E044" to="006C 0325" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign CANDRA E -->
+		<convert from="E045" to="0115" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped Vowel Sign SHORT E -->
+		<convert from="E046" to="0065" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign E -->
+		<convert from="E047" to="0113" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign AI -->
+		<convert from="E048" to="0061 0069" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign CANDRA O -->
+		<convert from="E049" to="014F" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Unmapped Vowel Sign SHORT O -->
+		<convert from="E04A" to="006F" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign O -->
+		<convert from="E04B" to="014D" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign AU -->
+		<convert from="E04C" to="0061 0075" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter VOCALIC RR -->
+		<convert from="E060" to="0072 0325 0304" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Letter VOCALIC LL -->
+		<convert from="E061" to="006C 0325 0304" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign VOCALIC L -->
+		<convert from="E062" to="0314 0072 0325 0304" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign VOCALIC LL -->
+		<convert from="E063" to="0314 006C 0325 0304" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- DANDA -->
+		<!-- Convert to full stop -->
+		<convert from="E064" to="002E" />
+	</mapping>
+
+	<mapping>
+		<!-- DOUBLE DANDA -->
+		<!-- PROBLEM - Converts back to Double Danda-->
+		<convert from="E065" to="0965" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit ZERO -->
+		<convert from="E066" to="0030" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit ONE -->
+		<convert from="E067" to="0031" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit TWO -->
+		<convert from="E068" to="0032" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit THREE -->
+		<convert from="E069" to="0033" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit FOUR -->
+		<convert from="E06A" to="0034" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit FIVE -->
+		<convert from="E06B" to="0035" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit SIX -->
+		<convert from="E06C" to="0036" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit SEVEN -->
+		<convert from="E06D" to="0037" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit EIGHT -->
+		<convert from="E06E" to="0038" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit NINE -->
+		<convert from="E06F" to="0039" />
+	</mapping>
+
+	<mapping>
+		<!-- ABBREVIATION SIGN -->
+		<!-- PROBLEM -->
+		<convert from="E070" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- GURMUKHI TIPPI -->
+		<convert from="E07C" to="1E43" />
+	</mapping>
+	
+	<mapping>
+		<!-- GURMUKHI ADDAK -->
+		<!-- Javascript code above converts Addak + Cons to Cons + Addak + Cons.  -->
+		<convert from="E07D" to="" />
+		<transliterate inherentvowel="0061" vowelaction="delete"/>
+	</mapping>
+
+	<mapping>
+		<!-- GURMUKHI IRI -->
+		<!-- Has no meaning on its own -->
+		<convert from="E07E" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- GURMUKHI URA -->
+		<!-- Has no meaning on its own -->
+		<convert from="E07F" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- GURMUKHI EK ONKAR -->
+		<convert from="E080" to="0069 006B 0020 0061 0075 1E41 006B 0101 1E5B" />
+	</mapping>
+
+	<mapping>
+		<!-- GLOTTAL STOP -->
+		<!-- PROBLEM -->
+		<convert from="E082" to="" />
+	</mapping>
+</metamorph-mapping>

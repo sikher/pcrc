@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gurmukhi Unicode Conversion Application", "Gurmukhi Unicode Conversion Application.csproj", "{53C3924A-D9C3-4007-A796-216E5073C9B1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{53C3924A-D9C3-4007-A796-216E5073C9B1}.Debug.ActiveCfg = Debug|.NET
+		{53C3924A-D9C3-4007-A796-216E5073C9B1}.Debug.Build.0 = Debug|.NET
+		{53C3924A-D9C3-4007-A796-216E5073C9B1}.Release.ActiveCfg = Release|.NET
+		{53C3924A-D9C3-4007-A796-216E5073C9B1}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

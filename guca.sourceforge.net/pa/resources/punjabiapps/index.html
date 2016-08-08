@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title>PCRC - General Resources - Developing Punjabi Applications</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../style.main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--//--><![CDATA[//><!-- 
+function changeAllLinksWithClassToTargetBlanks() {
+  for (i = 0; i < document.links.length; i++) {
+    if (document.links[i].getAttribute('class') == 'newwindow'
+      || document.links[i].className == 'newwindow') {
+      document.links[i].setAttribute('target', '_blank');
+    }
+  }
+}
+window.onload = changeAllLinksWithClassToTargetBlanks;
+//--><!]]></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!-- 
+function switchlang(){
+	var tempURL
+	var newURL
+	var currURL=(window.location.href)
+	var startURL='http://guca.sourceforge.net/pa/'
+
+	tempURL=(currURL.substring(28,currURL.length))
+	newURL=startURL + tempURL
+
+	window.location.href=newURL
+}
+//--><!]]></script>
+
+</head>
+
+<body>
+
+<!-- logo --><!-- Keep on one line to resolve spacing issues with IE -->
+<div id="logo"><img src="../../../logo.jpg" alt="Punjabi Computing Resource Centre"/></div>
+
+<!-- navigation (top) -->
+<div id="navigation">
+	&nbsp;﻿<a href="../../../index.html">Home</a> | <a href="../../../faq/index.html">FAQ</a> | <a href="../../../resources/index.html">General Resources</a> | <a href="../../../typography/index.html">Typography</a> | <a href="../../../applications/index.html">Applications</a> | <a href="../../../compatibility/index.html">Compatibility Guide</a>  | <a href="../../../forum/index.html">Forum</a> | <a href="mailto:sukhuk@users.sourceforge.net">Contact</a> | <a href="javascript:switchlang()" xml:lang="pa-IN" hreflang="pa-IN">ਪੰਜਾਬੀ</a>
+</div>
+
+<!-- location -->
+<div id="location">
+	&nbsp;You are here: <a href="../../../index.html">Home</a> > <a href="../../../resources/index.html">General Resources</a> > <a href="../../../resources/punjabiapps/index.html">Developing Punjabi Applications</a>
+</div>
+
+<!-- main section -->
+<table id="main">
+	<tr>
+		<!-- links (left) -->
+		<td id="links">
+			<h1>Quick Links</h1>
+			<p><a href="../../../applications/guca/index.html">Gurmukhi Conversion</a></p>
+<p><a href="../../../typography/fonts/saab/index.html">Saab Font</a></p>
+			<h1>Article Links</h1>
+			<p><a href="http://www.i18nguy.com/unicode/c-unicode.html">C/C++ Unicode Cheat Sheat</a></p>
+			<br/>
+<br/>
+<p>
+<a href="http://sourceforge.net/donate/index.php?group_id=103525"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" class="noborder" alt="Support This Project" /></a>	<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=103525&amp;type=1" width="88" height="31" class="noborder" alt="SourceForge.net Logo" /></a>
+</p>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29445160-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+		</td>
+		
+		<td id="page">
+			<h1>Developing Punjabi Applications</h1>
+
+<p>This article is aimed at programmers wishing to develop Unicode enabled applications - specifically in Punjabi.</p>
+
+<h2>Operating Systems</h2>
+
+<p>If you wish to develop Unicode Gurmukhi applications on anything older than Windows XP - forget it! 
+Only Windows XP and newer support Unicode Gurmukhi natively in applications.  Only consider creating Unicode 
+Gurmukhi applications if virtually all of your user base uses Windows XP (or anything newer).  Although Windows 
+2000 has support for Unicode, it does not contain the required version of the Uniscribe DLL that supports Gurmukhi. 
+You may consider upgrading the Uniscribe DLL to the one that accompanies Windows XP but this is in no way
+supported by Microsoft.</p>
+
+<p>
+Under Linux, GTK+ 2 uses Pango to render text which means any programs created using GTK+ 2 should render
+Unicode Gurmukhi correctly.  Gnome 2.4 and above (possibly earlier versions too) have been tested and support
+Unicode Gurmukhi when appropriate fonts have been installed.
+</p>
+
+<p>
+Mac OS 10.2 (Jaguar) and above supports Unicode Gurmukhi.
+</p>
+
+<h2>C++ Issues</h2>
+
+<p>If you are familiar with programming with Unicode in C++ you probably don't need to read this.</p>
+
+<h3>Define _UNICODE</h3>
+
+<p>Make sure you #define _UNICODE to ensure that any APIs that have both ANSI and Unicode versions default 
+to the Unicode version.  Alternatively, under Windows, you can explicitly call the wide (Unicode) versions
+of the Win32 APIs by adding a W to the end of the function name.</p>
+
+<h3>wchar_t and std::wstring</h3>
+
+<p>If you are using the char data type this must be changed to wchar_t.  Do not take wchar_t to mean 16 bits or 32 bits 
+and if you are using strings widely, we recommend you use std::wstring instead.</p>
+
+<h3>String Literals - L or _T()</h3>
+
+<p>Use L in front of string literals to ensure that they are Unicode.  For example: L"Hello World!\n".  Alternatively
+if you have defined _UNICODE you can use _T("Hello World!\n").</p>
+
+<h2>.NET & Mono Issues</h2>
+
+<p>Both .NET and Mono use Unicode natively and as such require no special adjustment to use Unicode Gurmukhi.  However
+be aware that the rendering of Gurmukhi is dependent on the underlying operating system.</p>
+
+<h2>Visual Basic Issues</h2>
+
+<p>Visual Basic 6 does not support Unicode very well at all.  You should upgrade to VB .NET if you wish to use
+Unicode Gurmukhi.</p>
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-4562988960684008";
+            /* Footer Advert */
+            google_ad_slot = "6498534292";
+            google_ad_width = 468;
+            google_ad_height = 60;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+		</td>
+        <td id="advert">
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-4562988960684008";
+            /* Right-side advert */
+            google_ad_slot = "2423423508";
+            google_ad_width = 160;
+            google_ad_height = 600;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </td>
+	</tr>
+</table>
+<!-- copyright -->
+<div id="copyright">
+	<p>Copyright &copy; 2004-2005 <a href="mailto:sukhuk@users.sourceforge.net">Sukhjinder Sidhu</a>. All rights reserved.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,521 @@
+﻿<metamorph-mapping version="1.0">
+	<information>
+		<from>Gurmukhi</from>
+		<to>__interindic__</to>
+		<version>1.0</version>
+		<author>The Sikher Project, Sukhjinder Sidhu</author>
+		<description>Converts Unicode Gurmukhi to InterIndic for transliteration into another script.</description>
+		<inputfont>Unicode</inputfont>
+		<outputfont></outputfont>
+	</information>
+
+	<prescript><![CDATA[
+
+	// This script is called before the mapping file has been processed.
+	// Metamorph passes the converted string as "Core.Text".
+	
+	import System;
+	import System.Windows.Forms;
+
+
+	class Gurmukhi
+	{
+		static function isGurmukhiChar(character)
+		{
+			if ((character > '\u0A00' && character < '\u0A66') || (character > '\u0A6F' && character < '\u0A80')){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		static function isVowelSign(character)
+		{
+			if (character > '\u0A3C' && character < '\u0A4D'){
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+
+	var addak = '\u0A71';
+	var virama = '\u0A4D';
+
+	var i;
+
+	for(i=0; i < Core.Text.Length; i++)
+	{
+		if((Core.Text[i] == addak) && (i >= 0) && (i < Core.Text.Length - 1))
+		{
+			// Replace Cons + Addak with Cons + Virama + Addak + Cons
+			// Addak is then deleted in the conversion process.
+			Core.Text = Core.Text.Insert(i, Core.Text[i + 1] + virama);
+			i += 2;
+		}
+
+		// Add a Virama to the end of any word without a vowel sign at the end
+
+		if (Gurmukhi.isGurmukhiChar(Core.Text[i]) && !Gurmukhi.isVowelSign(Core.Text[i]) && Core.Text[i] != virama)
+		{
+			if ((i >= 0 && i < Core.Text.Length - 1 && !Gurmukhi.isGurmukhiChar(Core.Text[i + 1]))
+				 || (i >= Core.Text.Length))
+			{
+				Core.Text.Insert(i+1, virama);
+			}
+		}	
+	}
+
+	]]></prescript>
+
+	<mapping>
+		<!-- Letter KHHA -->
+		<convert from="0A16 0A3C" to="E059" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter KHHA -->
+		<convert from="0A59" to="E059" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter GHHA -->
+		<convert from="0A17 0A3C" to="E05A" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter GHHA -->
+		<convert from="0A5A" to="E05A" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter ZA -->
+		<convert from="0A1C 0A3C" to="E05B" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter ZA -->
+		<convert from="0A1C 0A3C" to="E05B" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter FA -->
+		<convert from="0A2B 0A3C" to="E05E" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter FA -->
+		<convert from="0A5E" to="E05E" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter SHA -->
+		<convert from="0A5B" to="E036" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter SHA -->
+		<convert from="0A36" to="E036" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter LLA -->
+		<convert from="0A32 0A3C" to="E033" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter LLA -->
+		<convert from="0A33" to="E033" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign CHANDRABINDU -->
+		<convert from="0A01" to="E001" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign ADDAK BINDI -->
+		<convert from="0A01" to="E001" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign BINDI -->
+		<convert from="0A02" to="E002" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign VISARG -->
+		<convert from="0A03" to="E003" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter A -->
+		<convert from="0A05" to="E005" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter AA -->
+		<convert from="0A06" to="E006" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter I -->
+		<convert from="0A07" to="E007" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter II -->
+		<convert from="0A08" to="E008" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter U -->
+		<convert from="0A09" to="E009" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter UU -->
+		<convert from="0A0A" to="E00A" />
+	</mapping>
+
+	<mapping>
+		<!-- Fallback : VOLCALLIC LA -->
+		<convert from="0A0C" to="E032" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter EE -->
+		<convert from="0A0F" to="E00F" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter AI -->
+		<convert from="0A10" to="E010" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter OO -->
+		<convert from="0A13" to="E013" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter AU -->
+		<convert from="0A14" to="E014" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter KA -->
+		<convert from="0A15" to="e015" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter KHA -->
+		<convert from="0A16" to="E016" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter GA -->
+		<convert from="0A17" to="E017" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter GHA -->
+		<convert from="0A18" to="E018" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter NGA -->
+		<convert from="0A19" to="E019" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter CA -->
+		<convert from="0A1A" to="E01A" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter CHA -->
+		<convert from="0A1B" to="E01B" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter JA -->
+		<convert from="0A1C" to="E01C" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter JHA -->
+		<convert from="0A1D" to="E01D" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter NYA -->
+		<convert from="0A1E" to="E01E" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter TTA -->
+		<convert from="0A1F" to="E01F" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter TTHA -->
+		<convert from="0A20" to="E020" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter DDA -->
+		<convert from="0A21" to="E021" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter DDHA -->
+		<convert from="0A22" to="E022" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter NNA -->
+		<convert from="0A23" to="E023" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter TA -->
+		<convert from="0A24" to="E024" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter THA -->
+		<convert from="0A25" to="E025" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter DA -->
+		<convert from="0A26" to="E026" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter DHA -->
+		<convert from="0A27" to="E027" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter NA -->
+		<convert from="0A28" to="E028" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter PA -->
+		<convert from="0A2A" to="E02A" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter PHA -->
+		<convert from="0A2B" to="E02B" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter BA -->
+		<convert from="0A2C" to="E02C" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter BHA -->
+		<convert from="0A2D" to="E02D" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter MA -->
+		<convert from="0A2E" to="E02E" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter YA -->
+		<convert from="0A2F" to="E02F" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter RA -->
+		<convert from="0A30" to="E030" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter LA -->
+		<convert from="0A32" to="E032" />
+	</mapping>
+
+	<mapping>
+		<!-- Fallback -->
+		<convert from="0a33" to="E033" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter VA -->
+		<convert from="0A35" to="E035" />
+	</mapping>
+
+	<mapping>
+		<!-- BLANK? -->
+		<convert from="0a36" to="e036" />
+	</mapping>
+
+	<mapping>
+		<!-- Fallback -->
+		<convert from="0A38 0a3C" to="e036" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter SA -->
+		<convert from="0A38" to="E038" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter HA -->
+		<convert from="0A39" to="E039" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign NUKTA -->
+		<convert from="0A3C" to="E03C" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign AA -->
+		<convert from="0A3E" to="E03E" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign I -->
+		<convert from="0A3F" to="E03F" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign II -->
+		<convert from="0A40" to="E040" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign U -->
+		<convert from="0A41" to="E041" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign UU -->
+		<convert from="0A42" to="E042" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign EE -->
+		<convert from="0A47" to="E047" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign AI -->
+		<convert from="0A48" to="E048" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign OO -->
+		<convert from="0A4B" to="E04B" />
+	</mapping>
+
+	<mapping>
+		<!-- Vowel Sign AU -->
+		<convert from="0A4C" to="E04C" />
+	</mapping>
+
+	<mapping>
+		<!-- Sign VIRAMA -->
+		<convert from="0A4D" to="E04D" />
+	</mapping>
+
+	<mapping>
+		<!-- Letter RRA -->
+		<convert from="0A5C" to="E05C" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit ZERO -->
+		<convert from="0A66" to="E066" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit ONE -->
+		<convert from="0A67" to="E067" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit TWO -->
+		<convert from="0A68" to="E068" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit THREE -->
+		<convert from="0A69" to="E069" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit FOUR -->
+		<convert from="0A6A" to="E06A" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit FIVE -->
+		<convert from="0A6B" to="E06B" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit SIX -->
+		<convert from="0A6C" to="E06C" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit SEVEN -->
+		<convert from="0A6D" to="E06D" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit EIGHT -->
+		<convert from="0A6E" to="E06E" />
+	</mapping>
+
+	<mapping>
+		<!-- Digit NINE -->
+		<convert from="0A6F" to="E06F" />
+	</mapping>
+
+	<mapping>
+		<!-- TIPPI -->
+		<convert from="0A70" to="E07C" />
+	</mapping>
+
+	<mapping>
+		<!-- ADDAK-->
+		<!-- <convert from="0A71" to="E07D" /> -->
+		<convert from="0A71" to="" />
+	</mapping>
+
+	<mapping>
+		<!-- IRI -->
+		<convert from="0A72" to="E07E" />
+	</mapping>
+
+	<mapping>
+		<!-- URA -->
+		<convert from="0A73" to="E07F" />
+	</mapping>
+
+	<mapping>
+		<!-- EK ONKAR -->
+		<convert from="0A74" to="E080" />
+	</mapping>
+
+	<mapping>
+		<!-- DANDA -->
+		<convert from="0964" to="e064" />
+	</mapping>
+
+	<mapping>
+		<!-- DOUBLE DANDA -->
+		<convert from="0965" to="e065" />
+	</mapping>
+</metamorph-mapping>

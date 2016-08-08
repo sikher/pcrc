@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GUCA - User Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+<!--
+h1, h2, h3, h4, h5, h6, p {font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;}
+.copyright {
+	font-size: x-small;
+	font-weight: lighter;
+}
+.comment {color: #006600}
+.keyword {color: #0000FF}
+-->
+</style>
+</head>
+
+<body>
+<h1>GUCA User Documentation</h1>
+<p>This documentation deals with the general aspects of the Gurmukhi Unicode Conversion Application. It is specifically aimed at end-users wishing to use the main GUCA application. </p>
+<p>Applies to: GUCA Version <strong>1.3</strong></p>
+<h2>Contents</h2>
+<blockquote>
+  <p><a href="#introduction">Introduction</a></p>
+  <p><a href="#installation">Installation</a></p>
+  <p><a href="#thebasics">The Basics</a></p>
+  <p><a href="#repair">Repair</a></p>
+  <p><a href="#export">Export</a></p>
+  <p><a href="#batchprocessor">Batch Processor</a></p>
+  <p><a href="#charactercodeviewer">Character Code Viewer</a></p>
+  <p><a href="#custommappings">Custom Mappings</a> </p>
+  <p><a href="#transliteration">Transliteration</a> </p>
+</blockquote>
+<h2><a name="introduction" id="introduction"></a>Introduction</h2>
+<p>GUCA is designed specifically with the aim of converting 
+
+
+ASCII encoded, font-based <a href="http://www.sikhs.org/gurmukhi.htm">Gurmukhi</a> text into <a href="http://www.unicode.org/">Unicode</a>. 
+
+
+It is open-source and is released under the <a href="http://www.gnu.org/licenses/gpl.txt">GNU General Public Licence</a>.</p>
+<p>GUCA is created  using the <a href="http://msdn.microsoft.com/netframework/">Microsoft .NET framework</a> (currently version 1.1) and is designed for use on fully Unicode based Windows operating systems (Windows 2000, XP etc.). It should also work in Windows 98 and ME but the actual conversion will not be visible to the user until it is viewed in a operating system independent, Unicode compatible program (for example,  Internet Explorer 6).</p>
+<h2><a name="installation" id="installation"></a>Installation</h2>
+<p>GUCA is a small program and as such has very few dependencies. Before you begin installing, please ensure you have the <a href="http://msdn.microsoft.com/netframework/">Microsoft .NET Framework</a> installed on your computer. This is a fairly large download but it will allow you to use many programs in addition to GUCA.</p>
+<p>Once you have downloaded GUCA, you will need to extract the program files from the archive. To do this you require an unzipping utility. We recommend <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.winzip.com/downwz.htm">WinZip</a> or <a href="http://www.7-zip.org/download.html">7-Zip</a>. Extract the files to any location, for example &quot;C:\Program Files\Gurmukhi Unicode Conversion Application&quot; would be sufficient.</p>
+<p>Once extracted, simply click on the GUCA executable icon to load the program. If you wish to remove the program, simply delete the directory into which you extracted the archive. GUCA does not modify the system registry or create files outside of its own program directory.</p>
+<h2><a name="thebasics" id="thebasics"></a>The Basics</h2>
+<p>The main window of GUCA is designed to be very simple. It features a menu bar, two text boxes, a progress bar and two buttons. </p>
+<p><img src="mainwindow.png" alt="Main Window" width="528" height="420" /></p>
+<p>To begin, enter some text into the top text box. Then press the button labelled &quot;Convert&quot; to begin conversion. The progress bar at the bottom of the screen will indicate the progress of the conversion. If you wish to cancel the conversion at any time, you can press the &quot;Cancel&quot; button when it appears on the screen. The converted text will be shown in the bottom text box. </p>
+<p>You can open text into the top text box by going to &quot;File&quot; and clicking &quot;Open&quot;. You can save the contents of the bottom text box by clicking on &quot;File&quot; and then &quot;Save&quot; or &quot;Save As...&quot;. </p>
+<h2><a name="repair" id="repair"></a>Repair</h2>
+<p>The repair feature is designed to fix badly constructed Unicode Gurmukhi. This will not affect font-based Gurmukhi text. It can normalise text, reposition U+0A3F and repair characters based on the proposed (but not accepted) ISCII 91 extensions to Unicode. This feature can be used in the same way as the conversion feature but you should enter Unicode text into the top text box.</p>
+<h2><a name="export" id="export"></a>Export</h2>
+<p>GUCA enables you to export the converted/repaired text into an XHTML document. This is particularly useful if you are using Windows 98/ME and are unable to view the outputted Unicode text in the bottom text box. Once exported, you should be able to open up the file in an internet browser (Internet Explorer 6 or Mozilla Firefox are recommended). Provided you have the correct fonts installed, you should be able to view the Gurmukhi text in any Unicode enabled web browser. </p>
+<h2><a name="batchprocessor" id="batchprocessor"></a>Batch Processor</h2>
+<p>The batch processor tool enables you to either convert or repair multiple files in one operation. To load the batch processor, click on the &quot;Tools&quot; menu and then select &quot;Batch Processor&quot;. This should load up the batch processor dialog box as shown:</p>
+<p><img src="batchprocessor.png" alt="Batch Processor" width="528" height="354" /></p>
+<p>To add files, press the &quot;+&quot; button. To remove files press the &quot;-&quot; button. Once you have selected the files you wish to process, press the &quot;Convert&quot; or &quot;Repair&quot; button as appropriate. You can cancel the operation at any time.</p>
+<h2><a name="charactercodeviewer" id="charactercodeviewer"></a>Character Code Viewer</h2>
+<p>The character code viewer will give you details regarding Unicode characters in the Gurmukhi range. This tool is available from the &quot;Tools&quot; menu.</p>
+<p><img src="charactercodeviewer.png" alt="Character Code Viewer" width="328" height="128" /> </p>
+<p>Simply enter - or paste - a character into the text box and information about that character will be displayed to the right. If no information is available for that character (say for example if it is outside of the Gurmukhi range), only the code point will be displayed. </p>
+<h2><a name="custommappings" id="custommappings"></a>Custom Mappings</h2>
+<p>Custom mappings are used to convert to-and-from different fonts. It allows users to create their own custom font mappings that are not supported by GUCA.</p>
+<p>Clicking on 'Tools' &gt; 'Options' &gt; 'Mappings' brings up a list of recognised mappings:</p>
+<p><img src="mappingsoptions.png" alt="Custom Mapping Options" width="512" height="296" /> </p>
+<p>From this screen you can add or remove mappings. Selecting the check box next to a mapping makes it become the default mapping. This will be the mapping used in the batch processor or when you press F5. To select an alternative mapping from the main window, click 'Tools' &gt; 'Convert' and then select the required mapping. </p>
+<h2><a name="transliteration" id="transliteration"></a>Transliteration</h2>
+<p>GUCA now contains a simple transliteration tool that allows you to convert Unicode Gurmukhi into Latin text. This helps people that can read English and understand Punjabi, to read Punjabi text. To transliterate text, copy the appropriate Unicode Gurmukhi text into the top text box and press F9.</p>
+<p>This feature does NOT translate Punjabi to English. This is currently only a crude implementation which will be improved in coming versions. </p>
+<p class="copyright" align="center">Copyright &copy; 2004 <a href="mailto:sukhuk@users.sourceforge.net">Sukhjinder Sidhu</a> </p>
+</body>
+</html>

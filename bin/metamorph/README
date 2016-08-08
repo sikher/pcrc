@@ -1,0 +1,62 @@
+﻿-----------------------------------------------------------------------------
+
+The Punjabi Computing Resource Centre presents...
+
+	M E T A M O R P H
+
+An extensible tool designed to aid in the conversion of Indic text encodings
+and scripts.
+
+Visit http://guca.sourceforge.net/
+
+---INTRODUCTION--------------------------------------------------------------
+
+Metamorph is based on the Gurmukhi Unicode Conversion Application (GUCA). It
+builds on this Gurmukhi-centric base and is now an Indic-centric product.
+
+Metamorph ships with an internal module to convert visual order encoded
+Gurmukhi text into Unicode.  It also allows users to add mapping files for
+all sorts of conversions that do not require complex text analysis.
+
+Eventually,  Metamorph will ship with Unicode modules for other Indic scripts
+and it will facilitate transliteration using ICU's InterIndic Intermediary
+Encoding Format.
+
+---LICENSING------------------------------------------------------------------
+
+Publicly released versions of Metamorph is distributed under the GNU GPL.
+
+Privately released testing versions are not re-distributable.
+
+---GETTING STARTED------------------------------------------------------------
+
+To get started extract the archive and place the files in a directory of your
+choice.  Then install the required mapping files through the Options dialogue!
+
+------------------------------------------------------------------------------
+Copyright © 2004-2005 Punjabi Computing Resource Centre
+------------------------------------------------------------------------------
+
+# Mappings
+## 'FROM' Mappings
+* From.Gurmukhi.mmf - This is the mapping which is the standard Unicode Gurmukhi without any
+modifications, used to convert Gurmukhi to InterIndic.
+* From.Archaic.Gurmukhi.mmf - This mapping is used for Gurbani and contains within it extra code
+to convert Gurmukhi to InterIndic properly.
+* From.AnmolLipi.mmf - This is the mapping used for conversion from AnmolLipi font to Unicode.
+* From.DrChatrikWeb.mmf - This is the mapping used for conversion from DrChatrikWeb font to Unicode.
+* From.GurbaniAkhar.mmf - This is the mapping used for conversion from the GurbaniAkhar family of
+fonts to Unicode.
+
+## 'TO' Mappings
+* To.Latin.mmf - This is the mapping which is the standard Unicode Latin without any modifications,
+used to convert InterIndic to Latin.
+* To.Latin.2.mmf - This is the Hybrid Latin Mapping for Gurbani which includes all modifications to
+create an accurate phonetic transliteration, used to convert InterIndic to Latin.
+* To.Latin.3.mmf - This is the Hybrid Latin Mapping for Gurbani which includes all modifications to
+create an accurate phonetic transliteration, used to convert InterIndic to Latin. This is the most up-to-date transliteration, however it may still be incomplete.
+
+## To Make a Phonetic Transliteration
+* From.Archaic.Gurmukhi.mmf - This will help you convert Gurmukhi ASCII to InterIndic.
+* To.Latin.3.mmf - This will convert InterIndic to Latin Unicode.
+* Once the text is in Latin Unicode, you can use the [ICU Transliteration Application](https://github.com/sikher/icu-transliteration-application) or [ICU API](http://site.icu-project.org/) to convert from Latin to other Unicode scripts
